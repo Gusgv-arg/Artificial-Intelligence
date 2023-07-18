@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import {
-	copy,
-	linkIcon,
-	tick,
-} from "../../../project_ai_summarizer/src/assets";
+//import {copy,	linkIcon, tick,} from "../../../project_ai_summarizer/src/assets";
+import { trash, copy, linkIcon, tick, grid } from "../assets/index";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSummary } from "../redux/actions/fetchSummary";
 import GrowSpinner from "../components/Spinner";
 import Alert from "react-bootstrap/Alert";
 import { fetchExistingSummary } from "../redux/actions/fetchExistingSummary";
+import { deleteExistingSummary } from "../redux/actions/deleteExistingSummary";
 
 export default function Summary() {
 	const selectedImage = tick;
@@ -41,6 +39,10 @@ export default function Summary() {
 			summary: "",
 		});
 	};
+
+	const handleDelete=(url)=>{
+		dispatch(deleteExistingSummary(url))
+	}
 
 	useEffect(() => {
 		if (existingArticle) {
@@ -81,7 +83,7 @@ export default function Summary() {
 									existingArticle.url === item.url ? "selected" : "otra"
 								}`}
 							>
-								<div className="mr-2">
+								<div className="me-1">
 									<img
 										src={
 											existingArticle.url === item.url
@@ -91,7 +93,10 @@ export default function Summary() {
 									/>
 								</div>
 								<div>
-									<p>{item.url}</p>
+									<p className="me-2">{item.url}</p>
+								</div>
+								<div className="ms-auto">
+									<img onClick={()=>handleDelete(item.url)} src={trash} />
 								</div>
 							</div>
 						))}

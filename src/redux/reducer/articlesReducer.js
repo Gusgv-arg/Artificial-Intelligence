@@ -1,5 +1,6 @@
 /* eslint-disable no-case-declarations */
 import {
+	DELETE_EXISTING_SUMMARY,
 	FETCH_EXISTING_SUMMARY,
 	FETCH_SUMMARY_FAIL,
 	FETCH_SUMMARY_REQUEST,
@@ -34,6 +35,11 @@ export const articlesReducer = (
 			return {
 				...state,
 				article: existingArticle[0]
+			}
+		case DELETE_EXISTING_SUMMARY:
+			return {
+				...state,
+				articles: state.articles.filter((article)=>article.url!==action.payload)
 			}
 		default:
 			return state;
