@@ -1,0 +1,101 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+footer,
+header,
+hgroup,
+menu
+ {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;  
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.hero{
+  height: auto;  
+}
+.openAi {
+  font-size: 2rem;
+  color: orange;
+}
+.url_input{
+  border:none;
+  outline: none;
+  width: 100%; 
+  
+}
+.url_list:hover{
+  cursor: pointer;
+}
+.selected{
+  background-color: rgb(228, 230, 224);
+  border-radius: 5px;      
+}
+.summary {
+  height: 30vh;
+  text-align: left;
+  padding: 0.5rem;
+  
+ }
