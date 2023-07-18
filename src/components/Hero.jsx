@@ -13,7 +13,7 @@ function Hero() {
 			<Col>
 				<Button
 					type="button"
-					onClick={() => window.open("https://github.com/Gusgv-arg", "_blank")}
+					onClick={() => window.open("https://github.com/Gusgv-arg/Artificial-Intelligence", "_blank")}
 					variant="dark"
 					className=""
 				>
