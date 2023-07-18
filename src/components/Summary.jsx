@@ -83,7 +83,6 @@ export default function Summary() {
 							>
 								<div className="mr-2">
 									<img
-										/* src={copy}*/ className="d-flex align-items-center me-1"
 										src={
 											existingArticle.url === item.url
 												? selectedImage
