@@ -28,7 +28,7 @@ export const articlesReducer = (
 				article: action.payload,
 			};
 		case FETCH_SUMMARY_FAIL:
-			return { loading: false, error: action.payload };
+			return { ...state, loading: false, error: action.payload };
 		case FETCH_EXISTING_SUMMARY:
 			const aux= state.articles
 			const existingArticle = aux.filter((item)=>item.url===action.payload);

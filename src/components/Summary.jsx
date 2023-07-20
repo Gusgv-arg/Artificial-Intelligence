@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-//import {copy,	linkIcon, tick,} from "../../../project_ai_summarizer/src/assets";
-import { trash, copy, linkIcon, tick, grid } from "../assets/index";
+import { trash, copy, linkIcon, tick } from "../assets/index";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSummary } from "../redux/actions/fetchSummary";
 import GrowSpinner from "../components/Spinner";

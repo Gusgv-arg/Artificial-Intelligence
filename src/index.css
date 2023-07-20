@@ -86,15 +86,20 @@ html {
   width: 100%; 
   
 }
+.url_list{
+  max-width: 50vw;
+}
 .url_list:hover{
   cursor: pointer;
+  background-color: aquamarine;
 }
 .selected{
   background-color: rgb(228, 230, 224);
   border-radius: 5px;      
 }
 .summary {
-  height: 30vh;
+  height: auto;
+  min-height: 10rem;
   text-align: left;
   padding: 0.5rem;
   
