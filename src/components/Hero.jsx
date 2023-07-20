@@ -2,7 +2,7 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { logo } from "../../../project_ai_summarizer/src/assets";
+import { logo } from "../assets/index";
 
 function Hero() {
 	return (
