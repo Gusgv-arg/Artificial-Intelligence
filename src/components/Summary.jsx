@@ -39,9 +39,9 @@ export default function Summary() {
 		});
 	};
 
-	const handleDelete=(url)=>{
-		dispatch(deleteExistingSummary(url))
-	}
+	const handleDelete = (url) => {
+		dispatch(deleteExistingSummary(url));
+	};
 
 	useEffect(() => {
 		if (existingArticle) {
@@ -95,7 +95,7 @@ export default function Summary() {
 									<p className="me-2">{item.url}</p>
 								</div>
 								<div className="ms-auto">
-									<img onClick={()=>handleDelete(item.url)} src={trash} />
+									<img onClick={() => handleDelete(item.url)} src={trash} />
 								</div>
 							</div>
 						))}

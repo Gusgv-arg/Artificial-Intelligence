@@ -13,7 +13,12 @@ function Hero() {
 			<Col>
 				<Button
 					type="button"
-					onClick={() => window.open("https://github.com/Gusgv-arg/Artificial-Intelligence", "_blank")}
+					onClick={() =>
+						window.open(
+							"https://github.com/Gusgv-arg/Artificial-Intelligence",
+							"_blank"
+						)
+					}
 					variant="dark"
 					className=""
 				>
@@ -24,7 +29,8 @@ function Hero() {
 			<h1 className="mt-5 mb-2 fw-bold">Summarize Articles with</h1>
 			<span className="openAi fw-bolder">OpenAI GPT-4</span>
 			<h2 className="mt-2 fst-italic">
-				Simplify your reading with Summize, an open-source article summarizer <br/>
+				Simplify your reading with Summize, an open-source article summarizer{" "}
+				<br />
 				that transforms lengthy articles into clear and concise summaries
 			</h2>
 		</Row>
