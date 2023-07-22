@@ -7,12 +7,6 @@ import {
 	FETCH_SUMMARY_SUCCESS,
 } from "../constants/constants";
 
-/*  const initialState = {
-	loading: true,
-	articles: [],
-	article: {},
-};  */
-
 export const articlesReducer = (
 	state = { articles: [], loading: false },
 	action
@@ -22,7 +16,7 @@ export const articlesReducer = (
 			return { ...state, loading: true };
 		case FETCH_SUMMARY_SUCCESS:
 			return {
-				...state,
+				//...state,
 				loading: false,
 				articles: [...state.articles, action.payload],
 				article: action.payload,

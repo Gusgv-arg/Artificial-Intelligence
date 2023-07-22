@@ -3,12 +3,20 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { logo } from "../assets/index";
+import { Link } from "react-router-dom";
 
 function Hero() {
 	return (
 		<Row className="hero align-items-center mt-0 p-5">
 			<Col>
-				<img src={logo} alt="sumz_logo" className="w-28 object-contain" />
+				<img src={logo} alt="sumz_logo" className="w-28 object-contain me-auto" />
+			</Col>
+			<Col>
+				<Link to="/">
+					<Button variant="dark" type="button" className="">
+						Home
+					</Button>
+				</Link>
 			</Col>
 			<Col>
 				<Button

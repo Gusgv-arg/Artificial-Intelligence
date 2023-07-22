@@ -8,6 +8,7 @@ import GrowSpinner from "../components/Spinner";
 import Alert from "react-bootstrap/Alert";
 import { fetchExistingSummary } from "../redux/actions/fetchExistingSummary";
 import { deleteExistingSummary } from "../redux/actions/deleteExistingSummary";
+import Hero from "./Hero";
 
 export default function Summary() {
 	const selectedImage = tick;
@@ -17,7 +18,6 @@ export default function Summary() {
 
 	const [existingArticle, setExistingArticle] = useState("");
 
-	console.log("existingArticle fuera del useEffect", existingArticle);
 	const [show, setShow] = useState(true);
 
 	const globalState = useSelector((state) => state.articles);
@@ -52,6 +52,7 @@ export default function Summary() {
 
 	return (
 		<>
+			<Hero />
 			<Form onSubmit={handleSubmit} className="mb-3">
 				<div className="border border-2 rounded d-flex justify-content-center align-items-center w-25 m-auto">
 					<img src={linkIcon} alt="link-icon" className="mx-1 " />

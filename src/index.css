@@ -101,6 +101,9 @@ html {
   height: auto;
   min-height: 10rem;
   text-align: left;
-  padding: 0.5rem;
-  
+  padding: 0.5rem;  
+ }
+ .chat{
+  width: 50rem;
+  height: 30rem;
  }

@@ -29,6 +29,7 @@ export const fetchSummary = (params) => async (dispatch, getState) => {
 				},
 			}
 		);
+		console.log("data de la api desde la accion", data.summary)
 		const object = { url: params, summary: data.summary };
 		dispatch({ type: FETCH_SUMMARY_SUCCESS, payload: object });
 		localStorage.setItem("articles", JSON.stringify(getState().articles));
