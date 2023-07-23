@@ -20,6 +20,11 @@ function Home() {
 							<Button variant="success">Chat GPT</Button>
 						</Link>
 					</div>
+					<div>
+						<Link to="/trainedchatbot">
+							<Button variant="success">Chatbot entrenado</Button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
