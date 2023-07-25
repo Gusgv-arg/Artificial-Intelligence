@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import {
@@ -14,9 +14,7 @@ import { Link } from "react-router-dom";
 
 const API_KEY = import.meta.env.VITE_API_KEY_CHATGPT;
 
-// "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = {
-	//  Explain things like you're talking to a software professional with 5 years of experience.
 	role: "system",
 	content:
 		"Explain things like you're talking to a software professional with 2 years of experience.",
@@ -41,7 +39,6 @@ function ChatGpt() {
 
 		const newMessages = [...messages, newMessage];
 		setMessages(newMessages);
-
 		setIsTyping(true);
 		await processMessageToChatGPT(newMessages);
 	};
@@ -97,9 +94,10 @@ function ChatGpt() {
 			});
 	}
 
+
 	return (
 		<div className="position-relative">
-			<div className="position-absolute top-0 start-0 ms-3" >
+			<div className="position-absolute top-0 start-0 ms-3">
 				{/* <Button>Home</Button> */}
 				<Link to="/">
 					<Button variant="dark" className="mt-3">
@@ -108,6 +106,9 @@ function ChatGpt() {
 				</Link>
 			</div>
 			<div className="d-flex-col justify-content-center">
+				<div>
+					<h2 className="mt-4 fw-bold">ChatGPT API</h2>
+				</div>
 				<div className="chat mt-5 m-auto text-start">
 					<MainContainer>
 						<ChatContainer>
