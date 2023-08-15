@@ -17,12 +17,17 @@ function Home() {
 					</div>
 					<div>
 						<Link to="/chat">
-							<Button variant="success">Chat GPT</Button>
+							<Button variant="success">My Chat GPT</Button>
 						</Link>
 					</div>
 					<div>
-						<Link to="/trainedchatbot">
-							<Button variant="success">Chatbot entrenado</Button>
+						<Link to="/trainedchatbot/chatling">
+							<Button variant="success">Trained Chatbot (Chatling)</Button>
+						</Link>
+					</div>
+					<div>
+						<Link to="/trainedchatbot/chatbase">
+							<Button variant="dark">Trained Chatbot (Chatbase)</Button>
 						</Link>
 					</div>
 				</div>

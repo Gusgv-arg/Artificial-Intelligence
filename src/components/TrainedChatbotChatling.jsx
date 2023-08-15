@@ -3,7 +3,7 @@ import Button from "react-bootstrap/esm/Button";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-function TrainedChatbot() {
+function TrainedChatbotChatling() {
 	return (
 		<>
 			<Link to="/">
@@ -40,4 +40,4 @@ function TrainedChatbot() {
 	);
 }
 
-export default TrainedChatbot;
+export default TrainedChatbotChatling;

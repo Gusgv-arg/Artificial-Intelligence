@@ -82,7 +82,6 @@ function ChatGpt() {
 				return data.json();
 			})
 			.then((data) => {
-				console.log(data);
 				setMessages([
 					...chatMessages,
 					{
@@ -94,7 +93,7 @@ function ChatGpt() {
 			});
 	}
 
-
+console.log(messages)
 	return (
 		<div className="position-relative">
 			<div className="position-absolute top-0 start-0 ms-3">
@@ -121,7 +120,6 @@ function ChatGpt() {
 								}
 							>
 								{messages.map((message, i) => {
-									console.log(message);
 									return <Message key={i} model={message} />;
 								})}
 							</MessageList>

@@ -3,7 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Summary from "./components/Summary";
 import ChatGpt from "./components/ChatGpt";
 import Home from "./components/Home";
-import TrainedChatbot from "./components/TrainedChatbot";
+import TrainedChatbotChatling from "./components/TrainedChatbotChatling";
+import TrainedChatbotChatbase from "./components/TrainedChatbotChatbase";
 
 function App() {
 	return (
@@ -12,7 +13,8 @@ function App() {
 				<Route path="/" element={<Home />} exact />
 				<Route path="/summary" element={<Summary />} exact />
 				<Route path="/chat" element={<ChatGpt />} exact />
-				<Route path="/trainedchatbot" element={<TrainedChatbot />} exact />
+				<Route path="/trainedchatbot/chatling" element={<TrainedChatbotChatling />} exact />
+				<Route path="/trainedchatbot/chatbase" element={<TrainedChatbotChatbase />} exact />
 			</Routes>
 		</>
 	);
